@@ -4,6 +4,9 @@
 
 body {
   font-family: "Public Sans", sans-serif;
+  background: linear-gradient(135deg, #f9a8d4, #fbc2eb);
+  color: #333;
+  margin: 0;
 }
 
 img,
@@ -13,26 +16,31 @@ svg {
 }
 
 svg {
-  color: #ad7000;
+  color: #ff6f61; /* Vibrant color for SVG icons */
   width: 70px;
   height: 70px;
   margin: 1rem auto;
 }
 
+/* Large titles for a bold, modern look */
 h1 {
   font-size: 4rem;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   text-align: center;
   font-family: "Pacifico", cursive;
+  color: #ff6f61;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 h3 {
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
+  color: #ff6f61;
 }
 
 .App {
@@ -41,6 +49,8 @@ h3 {
   align-items: center;
   margin: 0 auto;
   height: 100vh;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1); /* Gradient background */
+  color: #333;
 }
 
 .wrapper {
@@ -55,16 +65,18 @@ main {
 
 header {
   width: 100%;
-  background: #ffe7a8;
+  background: linear-gradient(135deg, #ff6f61, #ffc371);
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   text-align: left;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-left: 1rem;
-  font-weight: 400;
-  font-size: 1.75rem;
-  letter-spacing: 0.6px;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 header h1 span {
@@ -72,18 +84,22 @@ header h1 span {
   margin-right: 0.5rem;
   font-family: "Redacted Script", cursive;
   font-weight: 400;
-  font-size: 6.25rem;
-  line-height: 33px;
+  font-size: 6rem;
+  color: #ffe7a8;
 }
 
 header h2 {
-  font-size: 3.4375rem;
+  font-size: 3rem;
   font-weight: 700;
+  color: white;
 }
 
 footer {
   text-align: center;
   padding: 2rem 0;
+  background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+  color: white;
+  font-size: 1rem;
 }
 
 .message {
@@ -95,9 +111,9 @@ footer {
   width: 70%;
   text-align: center;
   font-size: 1.25rem;
-  background-color: #fff2cf;
-  color: #ad7000;
-  border: 2px solid #ad7000;
+  background-color: #ffecf0;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
   padding: 3rem 1.5rem;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -130,29 +146,27 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  background: #ffe7a8;
-}
-
-.favorite-quotes .quotes h3 {
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
+  background: linear-gradient(135deg, #f9a8d4, #fbc2eb);
+  padding: 2rem;
 }
 
 .favorite-quotes .quote-card {
-  margin: 4.375rem 0;
+  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 2px solid #ad7000;
-  border-radius: 26px;
-  background-color: transparent;
-  font-size: 2rem;
-  color: #ad7000;
+  border: 2px solid #ff6f61;
+  border-radius: 20px;
+  background-color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* .favorite-quotes .quote-card::before {
+.favorite-quotes .quote-card::before {
   content: "#" attr(data-list-position);
   padding: 0 1rem;
   position: absolute;
@@ -162,23 +176,18 @@ footer {
   height: 20px;
   text-align: center;
   font-family: "Mukta Mahee", sans-serif;
-  font-size: 3.75rem;
-  line-height: 20px;
+  font-size: 3rem;
   font-weight: 700;
-  background-color: #ffe7a8;
-} */
+  background-color: white;
+  color: #ff6f61;
+}
 
 .favorite-quotes .quote-card h3 {
   width: 90%;
   text-align: center;
   font-size: 1.625rem;
   line-height: 38px;
-}
-
-.favorite-quotes .quote-card p {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 700;
+  color: #ff6f61;
 }
 
 .favorite-quotes .favorite-quotes-description {
@@ -186,12 +195,12 @@ footer {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #ad7000;
+  color: #ff6f61;
+  font-size: 1.2rem;
 }
 
 .favorite-quotes .favorite-quotes-description p {
   margin: 0.4rem;
-  font-size: 1.125rem;
 }
 
 .category-header {
@@ -207,12 +216,7 @@ footer {
   margin: 90px 0;
   font-weight: 700;
   font-size: 2.5rem;
-}
-
-.quotes .category-header p {
-  width: auto;
-  margin-top: 12px;
-  text-align: center;
+  color: #ff6f61;
 }
 
 .category-header #category {
@@ -224,56 +228,34 @@ footer {
   border: 0;
   font-family: inherit;
   font-size: 1.25rem;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  color: white;
+  padding: 0.5rem;
 }
 
-.category-filter {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.3125rem;
-}
-
-.category-filter label {
-  margin-left: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 800;
-}
-
-.category-filter svg {
-  width: 15px;
-  height: 15px;
-  fill: black;
-  color: black;
-}
-
-.category-filter fieldset {
-  padding: 1rem;
+.quotes .category-header p {
+  width: auto;
+  margin-top: 12px;
   text-align: center;
-}
-
-.category-filter select {
-  margin-left: 2rem;
-  padding: 7px 10px;
-  font-size: inherit;
-  font-family: inherit;
-  background-color: #ffffff;
 }
 
 .quotes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
-  gap: 2.5rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .quotes h3 {
-  font-size: 1.75rem;
-  line-height: 39px;
+  font-size: 2rem;
+  color: #333;
 }
 
 .quotes p {
   width: 100%;
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
+  color: #666;
 }
 
 .quote-card {
@@ -282,81 +264,32 @@ footer {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  max-width: 100%;
+  max-width: 400px;
   padding: 2rem;
-  border: 1px solid #ccc;
-  border-radius: 26px;
-  background-color: #88bbc1;
-  font-size: 1.75rem;
-}
-
-.quote-card .close-quote {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.quote-card .close-quote {
-  color: #ad7000;
-  transition: 0.1s;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.quote-card .close-quote:hover {
-  transform: scale(1.2);
-}
-
-.quote-card div > h3 {
-  margin: 3rem 0;
-  font-weight: 400;
-}
-
-.quote-card .categories {
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-.quote-card .category {
-  margin-right: 12px;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.quote-card footer {
-  padding: 0;
+  border: 2px solid #ff6f61;
+  border-radius: 20px;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
 }
 
 .quote-card .author {
   margin: 0;
   text-align: left;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .quote-card .add-favorite {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
   text-align: right;
   cursor: pointer;
+  color: #ff6f61;
   transition: 0.3s;
 }
 
-.quote-card .add-favorite svg {
-  display: inline-block;
-  width: 2ch;
-  max-width: 60px;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-.quote-card .add-favorite:hover svg {
-  color: #000;
+.quote-card .add-favorite:hover {
+  color: #ff3e30;
 }
 
 @keyframes slide-down {
@@ -375,20 +308,7 @@ footer {
     justify-content: space-between;
   }
   .all-quotes .quote-card {
-    width: calc(50% - 2.5rem);
-  }
-  .quotes .category-header {
-    justify-content: space-between;
-  }
-  .favorite-quotes .quote-card h3 {
-    width: 70%;
-    line-height: 44px;
-    font-size: 2rem;
-  }
-  .favorite-quotes .quote-card p {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+    width: calc(50% - 2rem);
   }
 }
 
@@ -397,13 +317,6 @@ footer {
     justify-content: flex-start;
   }
   .all-quotes .quote-card {
-    width: calc(33% - 1.42rem);
-  }
-  .category-header {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .quotes .category-header p {
-    text-align: left;
+    width: calc(33% - 1rem);
   }
 }
